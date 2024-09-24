@@ -15,9 +15,9 @@ const Form = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <div>
-                        <label htmlFor="Full_name">Full Name </label>
-                        <input {...register("Full_name", { required: true })} type="text" id="Full_Name" placeholder="Full Name" required="" />
-                        {errors.Full_name && <span>This field is required</span>}
+                        <label htmlFor="Full_Name">Full Name </label>
+                        <input {...register("Full_Name", { required: true })} type="text" id="Full_Name" placeholder="Full Name" />
+                        {errors.Full_Name && <span>This field is required</span>}
                     </div>
                     <div>
                         <label htmlFor="Father_Name">Father Name</label>
@@ -30,9 +30,9 @@ const Form = () => {
                         {errors.Email && <span className='text-[red]'>This field is required</span>}
                     </div>
                     <div>
-                        <label htmlFor="Contact_Number">Contact Number</label>
-                        <input {...register("Contact_Number", { required: true })} type="number" id="Contact_Number" placeholder="Enter first digits is 0" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="" />
-                        {errors.Contact_Number && <span>This field is required</span>}
+                        <label htmlFor="Phone_Number">Contact Number</label>
+                        <input {...register("Phone_Number", { required: true })} type="number" id="Phone_Number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="" />
+                        {errors.Phone_Number && <span>This field is required</span>}
                     </div>
                     <div>
                         <label htmlFor="CNIC">National ID (CNIC)</label>
